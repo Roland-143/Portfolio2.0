@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick's Portfolio</title>
+    <link rel="stylesheet" href="stuffff.CSS" />
+    <link rel="JavaScript" href="stuff.js" />
+</head>
+<main>
+    <div id="navbar-placeholder"></div>
+    <script>
+    fetch('navbar.html')
+      .then(res => {
+        if (!res.ok) throw new Error('Cannot load navbar');
+        return res.text();
+      })
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error(err));
+  </script>
+
+
+    <section class="resume-text">
+        <h1>My Resume</h1>
+    </section>
+    <div class="resume-content">
+        <img src="images/Resume2025.png" alt="Resume" class="resume-image" />
+    </div>
+
+    <a href="https://drive.google.com/file/d/1mtkrfJk7LFXty4O5jp9PCHsQAoUfw-Y3/view" target="_blank" rel="noopener">
+        <img src="images/zoom.png" class="popout-img" alt="Popout Icon" />
+    </a>
+
+</main>
+    <footer>
+        <p>&copy; 2025 Nick Steltzner</p>
+    </footer>
+</html>

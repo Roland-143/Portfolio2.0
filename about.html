@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick's Portfolio</title>
+    <link rel="stylesheet" href="stuffff.CSS" />
+    <link rel="JavaScript" href="stuff.js" />
+</head>
+
+<body>
+    <main>
+<div id="navbar-placeholder"></div>
+    <script>
+    fetch('navbar.html')
+      .then(res => {
+        if (!res.ok) throw new Error('Cannot load navbar');
+        return res.text();
+      })
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error(err));
+  </script>
+
+        <section class="about-header">
+            <h1>About</h1>
+        </section>
+        <div class="grid">
+            <div class="box about" id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a Student at Purdue Northwest University studying Computer
+                    Science with concentration in AI Studies, alongside a minor in
+                    Cybersecurity. I enjoy coding, learning new technologies, and
+                    working on exciting projects! Eager to apply academic knowledge and
+                    real-world experience to contribute meaningfully and drive impactful
+                    solutions.
+                </p>
+            </div>
+
+            <section class="box hobbies" id="hobbies">
+                <h2>Hobbies</h2>
+                <p>
+                    In my free time I enjoy to read, immersing myself in different forms
+                    of literature, from fantasy to psychology and philosophy! I am an
+                    avid hiker and traveller, and would love to find myself exploring
+                    the world and experiencing new cultures. I enjoy disc golf and would
+                    love to get back into Ice Hockey. Coding allows me to express my
+                    creativity and problem-solving skills; I strive to build
+                    applications that can make a difference in people's lives.
+                </p>
+            </section>
+
+            <section class="box fun-facts" id="fun-facts">
+                <h2>Fun Facts</h2>
+                <ul>
+                    <li>I enjoy to explore caves with a friend</li>
+                    <li>
+                        I used to explore abandonded building and oftentimes found myself
+                        in interesting situations
+                    </li>
+                    <li>I played Ice Hockey for a little over 12 years</li>
+                    <li>
+                        I play a variety of video and board games and if you have a
+                        recommendation feel free to share!
+                    </li>
+                    <li>
+                        I typically find myself between anywhere between 10-25 books at a
+                        time, a decent bit is manga.
+                    </li>
+                    <li>
+                        My dream is to travel the world working on a multitude of
+                        different projects to benefit society.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="box skills" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>
+                        <strong>Programming Languages:</strong> Java, JavaScript,
+                        TypeScript, Python, YAML, Bash
+                    </li>
+                    <li><strong>Mobile & Frontend:</strong> React Native, HTML, CSS</li>
+                    <li>
+                        <strong>Tools & Platforms:</strong> Git, VS Code, IntelliJ,
+                        Android Studio, Xcode, Postman, MySQL Workbench, CISCO Networking,
+                        Jira, Confluence
+                    </li>
+                    <li>
+                        <strong>Soft Skills:</strong> Communication, Team Coordination,
+                        Problem Solving, Adaptability, Peer Mediation
+                    </li>
+                    <li><strong>Machine Learning:</strong> Currently Learning</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Nick Steltzner</p>
+    </footer>
+</body>
+
+</html>

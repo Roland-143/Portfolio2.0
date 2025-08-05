@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nick's Portfolio</title>
+  <link rel="stylesheet" href="stuffff.CSS" />
+  <link rel="JavaScript" href="stuff.js" />
+</head>
+
+<body>
+  <main>
+    <div id="navbar-placeholder"></div>
+    <script>
+    fetch('navbar.html')
+      .then(res => {
+        if (!res.ok) throw new Error('Cannot load navbar');
+        return res.text();
+      })
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error(err));
+    </script>
+
+
+    <section class="projects">
+      <h1>Projects</h1>
+    </section>
+    <div class="grid">
+      <section class="box bash" id="project1">
+        <h2>Bash_Portfolio Script</h2>
+        <a href="https://github.com/roland-143/Bash_Portfolio" target="_blank" rel="noopener">
+          <button class="tab-button">View Project</button>
+        </a>
+        <p>A command like script that was created as part of the curricullum for my internship at 365 Retail Markets;
+          it will output information about me and my projects in the terminal using Bash scripting.
+          It is a fun way to showcase my skills and projects in a unique format.
+        </p>
+      </section>
+      <section class="box tripWatchdog" id="project2">
+        <h2>Trip Watchdog</h2>
+        <a href="https://github.com/roland-143/TripWatchdog" target="_blank" rel="noopener">
+          <button class="tab-button">View Project</button>
+        </a>
+        <p>A anonymous safety first companion app that keeps an eye on your journey and alerts
+          your trusted contacts if you do not check in as planned. This app is meant to act as a
+          automated and digital callout that will notify SARS and other desired contacts with a quick personalized
+          message
+          if you have not checked in as planned.
+        </p>
+      </section>
+      <section class="box portfolio" id="project3">
+        <h2>DND_Suppliment</h2>
+        <a href="https://github.com/roland-143/Dnd_Suppliment" target="_blank" rel="noopener">
+          <button class="tab-button">View Project</button>
+        </a>
+        <p>Under Construction As of Now: This will act as a Spell, Ability, and Concentration tracking suppliment for
+          DND &
+          other TTRPG games alike.
+        </p>
+      </section>
+      <section class="box portfolio" id="project4">
+        <h2>Work In Progress!</h2>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">
+          <button class="tab-button">View Project</button>
+        </a>
+        <p>Nothing to see here folks! Currently cooking up new ideas in the kitchen.</p>
+      </section>
+    </div>
+  </main>
+</body>
+<footer>
+  <p>&copy; 2025 Nick Steltzner</p>
+</footer> 
+
+</html>

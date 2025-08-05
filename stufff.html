@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nick's Portfolio</title>
+  <link rel="stylesheet" href="stuffff.CSS" />
+  <link rel="JavaScript" href="stuff.js" />
+</head>
+
+<body>
+<main>
+  <section class="home">
+    <header>
+      <h1>Hello, welcome to my Portfolio website!</h1>
+      <button class="main-image-button"><img src="images/IMG_5983.png" class="main-image" /></button>
+      <p>Take a moment to click through the different tabs to explore. Feel free to reach out if you have any questions
+        or want to collaborate!</p>
+      <p>Thank you for visiting!</p>
+      <p>~ Nick</p>
+    </header>
+  </section>
+</main>
+<footer>
+    <p>&copy; 2025 Nick Steltzner</p>
+  </footer>
+  <script type="text/javascript" src="stuff.js"></script>
+
+  <div id="navbar-placeholder"></div>
+    <script>
+    fetch('navbar.html')
+      .then(res => {
+        if (!res.ok) throw new Error('Cannot load navbar');
+        return res.text();
+      })
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error(err));
+  </script>
+
+  
+</body>
+</html>
